@@ -30,6 +30,7 @@ jobs:
         run: |
           git clone https://github.com/halo-dev/halo.git
           cd halo
+          git checkout v${{ inputs.checkout }}
 
       - name: Archive plugin-githuboss jar
         uses: actions/upload-artifact@v3
