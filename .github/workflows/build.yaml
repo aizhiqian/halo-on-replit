@@ -30,7 +30,7 @@ jobs:
         run: |
           git clone https://github.com/halo-dev/halo.git
           cd halo
-          git checkout v${{ inputs.checkout }}
+          gh pr checkout 4354
           npm install -g pnpm
           make -C console build
           # Set the version with tag name when releasing
