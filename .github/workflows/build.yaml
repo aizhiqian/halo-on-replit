@@ -1,4 +1,4 @@
-name: Build Plugin JAR File
+name: Build JAR File
 
 on:
   workflow_dispatch:
@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          cache: 'gradle'
           java-version: 17
       - name: Build with Gradle
         run: |
