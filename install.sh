@@ -4,10 +4,10 @@ echo "GitHub开源地址：https://github.com/aizhiqian/halo-on-replit"
 nix-env -iA nixpkgs.wget
 mkdir build
 cd build
-wget -O .replit https://github.com/aizhiqian/halo-on-replit/raw/main/.replit
-wget -O replit.nix https://github.com/aizhiqian/halo-on-replit/raw/main/replit.nix
+wget -O .replit https://raw.githubusercontent.com/aizhiqian/halo-on-replit/main/.replit
+wget -O replit.nix https://raw.githubusercontent.com/aizhiqian/halo-on-replit/main/replit.nix
 cd ..
-wget -O main.sh https://github.com/aizhiqian/halo-on-replit/raw/main/main.sh
+wget -O main.sh https://raw.githubusercontent.com/aizhiqian/halo-on-replit/main/main.sh
 wget -O halo.jar https://github.com/aizhiqian/halo-on-replit/releases/download/2.8.0/halo.jar
 cp -r build/.replit . && cp -r build/replit.nix .
 rm -rf build/
