@@ -31,7 +31,7 @@ jobs:
           git clone https://github.com/halo-dev/halo.git
           cd halo
           git fetch origin pull/4354/head:branch_name
-          git checkout v${{ inputs.checkout }}
+          git checkout ${{ inputs.checkout }}
           npm install -g pnpm
           make -C console build
           # Set the version with tag name when releasing
