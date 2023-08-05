@@ -31,7 +31,13 @@ jobs:
           git clone https://github.com/halo-dev/halo.git
           cd halo
           git checkout v${{ inputs.checkout }}
-
+          npm install -g pnpm
+          make -C console build
+          # Set the version with tag name when releasing
+          version=${{ github.event.release.tag_name }}
+          version=${version#v}
+          sed -i "s/version=.*-SNAPSHOT$/version=$version/1" gradle.properties
+          ./gradlew clean build -x test
       - name: Archive plugin-githuboss jar
         uses: actions/upload-artifact@v3
         with:
