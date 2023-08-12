@@ -31,8 +31,7 @@
 ## 使用说明
 
 Halo-On-Replit Jar是我重新用官方仓库：[https://github.com/halo-dev/halo](https://github.com/halo-dev/halo) 编译打包的。   
-因为Replit使用官方的 Jar，过几小时就会重置一次数据库（有时候几十分钟），我把工作目录改到/home/runner/项目名字   
-从根源上解决了反复重置数据库的问题。
+因为Replit使用官方的 Jar，过几小时就会重置一次数据库（有时候几十分钟），我把工作目录改为`/home/runner/${REPL_SLUG}/.halo2`从根源上解决了反复重置数据库的问题。
 
 一键安装脚本 (环境选择`Bash` 或 `Blank Repl`)   
 
