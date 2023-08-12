@@ -28,6 +28,10 @@
 
 可访问 [官方应用市场](https://halo.run/store/apps) 或 [awesome-halo 仓库](https://github.com/halo-sigs/awesome-halo) 查看已经适用于 Halo 2.x 的主题和插件，以及适用于 Halo 1.x 的相关仓库。
 
+## 编译
+
+[构建文档](https://docs.halo.run/developer-guide/core/build)
+
 ## 使用说明
 
 Halo-On-Replit Jar是我重新用官方仓库：[https://github.com/halo-dev/halo](https://github.com/halo-dev/halo) 编译打包的。   
