@@ -37,18 +37,21 @@
 Halo-On-Replit Jar是我重新用官方仓库：[https://github.com/halo-dev/halo](https://github.com/halo-dev/halo) 编译打包的。   
 因为Replit使用官方的 Jar，过几小时就会重置一次数据库（有时候几十分钟），我把文件`application/src/main/resources/application.yaml`中的工作目录（work-dir）改为`/home/runner/${REPL_SLUG}/.halo2`从根源上解决了反复重置数据库的问题。
 
-一键安装脚本 (环境选择`Bash` 或 `Blank Repl`)   
+***一键安装脚本 (环境选择`Bash` 或 `Blank Repl`)***   
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/aizhiqian/halo-on-replit/main/install.sh)
 ```
 
-Halo一键升级脚本
+***一键更新脚本***
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/aizhiqian/halo-on-replit/main/update.sh)
-```
+# 更新最新版（本项目构建的最新版）
+bash update.sh
 
+# 或者指定版本（本项目构建的某个版本）
+bash update.sh v2.10.0
+```
 ## Halo2.0以上版本自定义密码
 
 Halo文档演示是这样的:
